@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL here](https://github.com/neo2enigma/fylo-data-storage-component-master)
+- Live Site URL: [live site URL here](https://neo2enigma.github.io/fylo-data-storage-component-master/)
 
 ## My process
 First I tried to understand each part of design and group them as possible. creating cards with exact margin and padding was a little tricky. Finally in desktop version I used 2 media query to make it desktop friendly.
