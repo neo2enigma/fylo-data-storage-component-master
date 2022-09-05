@@ -78,6 +78,7 @@ main {
     height: 413px;
     /* margin: auto auto; */
     top: 217px;
+
 }
 
 .card {
@@ -125,6 +126,16 @@ header div .box {
     width: 48px;
     height: 48px;
     padding: 12px;
+    box-shadow: unset;
+    transform: scale(1);
+    transition: box-shadow .2s, transform .2s;
+    cursor: pointer;
+
+}
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 1px rgba(184, 184, 184, 0.5)
 }
 
 #box1 {
@@ -194,43 +205,60 @@ progress {
     /* Reset the default appearance */
     -moz-appearance: none;
     appearance: none;
-
-}
-
-progress {
-    height: 100%;
-    width: 100%;
-    /* border-radius: 10px; */
-    /* background: hsl(228, 56%, 26%); */
-    /* background-color: red; */
-    padding-bottom: 10px;
-
-}
-
-progress[value]::-webkit-progress-value {
-    background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
-    /* background-color: red; */
-    border-radius: 10px;
-}
-
-progress[value]::-webkit-progress-bar {
-
-    border-radius: 10px;
-    border: 3px solid hsl(229, 57%, 11%);
-    background: hsl(229, 57%, 11%);
+    position: relative;
     height: 20px;
+    width: 262px;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%);
+    padding-bottom: 20px;
+}
+
+progress::before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
+    top: 0px;
+    left: 0px;
+    right: 79px;
+    height: 14px;
+    margin: 3px;
+    border-radius: 8px;
+    transition: right 1s;
+}
+
+progress::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    right: 84px;
+    top: 5px;
+    transition: right 1s;
+}
+
+progress:hover {
+    /* right: 100px; */
 }
 
 progress[value]::-webkit-progress-value {
-    background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
-    /* background-color: red; */
-    border-radius: 10px;
+    /* background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
+    border-radius: 10px; */
+}
+
+
+
+progress[value]::-webkit-progress-value {
+    /* background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
+    border-radius: 10px; */
 }
 
 
 
 
 .percents {
+    margin-top: 13px;
     position: relative;
     font-size: 12px;
     font-weight: bold;
@@ -284,17 +312,16 @@ progress[value]::-webkit-progress-value {
     }
 
     .bubble {
-        right: 40px;
+        right: 50px;
         left: unset;
         bottom: unset;
-        top: -37px;
+        top: -47px;
         border-bottom-right-radius: 0px;
     }
 
     .card p {
         text-align: left;
     }
-
 
 
     .bubble:after {
@@ -310,4 +337,31 @@ progress[value]::-webkit-progress-value {
         margin-left: 133px;
         margin-bottom: -21px;
     }
+
+    progress {
+        width: 459px;
+    }
+
+    progress::before {
+        right: 117px;
+    }
+
+    progress::after {
+        right: 123px;
+    }
+
+    .percents {
+        width: 461px;
+    }
+}
+
+.attribution {
+    color: hsla(0, 0%, 97%, 0.5);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: white;
 }
