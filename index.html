@@ -1,66 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
-		<link rel="stylesheet" href="style.css" />
-		<title>Frontend Mentor | Fylo data storage component</title>
 
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
-	</head>
-	<body>
-		<main>
-			<section class="cards">
-				<div class="card">
-					<header>
-						<div id="logo"></div>
-						<div id="boxes">
-							<div class="box" id="box1"></div>
-							<div class="box" id="box2"></div>
-							<div class="box" id="box3"></div>
-						</div>
-					</header>
-				</div>
-				<div class="card">
-					<p>You’ve used <strong>815 GB</strong> of your storage</p>
-					<section class="progress">
-						<progress id="file" max="100" value="70">70&</progress>
-						<section class="percents">
-							<span>0 GB</span>
-							<span>100 GB</span>
-						</section>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- displays site properly based on user's device -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Frontend Mentor | Fylo data storage component</title>
+
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+		.attribution {
+			font-size: 11px;
+			text-align: center;
+		}
+
+		.attribution a {
+			color: hsl(228, 45%, 44%);
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<section class="cards">
+			<div class="card">
+				<header>
+					<div id="logo"></div>
+					<div id="boxes">
+						<div class="box" id="box1"></div>
+						<div class="box" id="box2"></div>
+						<div class="box" id="box3"></div>
+					</div>
+				</header>
+			</div>
+			<div class="card">
+				<p>You’ve used <strong>815 GB</strong> of your storage</p>
+				<section class="progress">
+					<progress id="file" max="100" value="70">70&</progress>
+					<section class="percents">
+						<span>0 GB</span>
+						<span>100 GB</span>
 					</section>
-					<div class="bubble"><span>185</span><span>GB Left</span></div>
-				</div>
-			</section>
-		</main>
-		<div class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Kamran</a>.
-		</div>
-	</body>
+				</section>
+				<div class="bubble"><span>185</span><span>GB Left</span></div>
+			</div>
+		</section>
+	</main>
+	<div class="attribution">
+		Challenge by
+		<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+			href="#">Kamran</a>.
+	</div>
+</body>
+
 </html>
